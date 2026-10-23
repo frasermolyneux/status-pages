@@ -17,7 +17,7 @@ Central incident source for [MX status](https://mxstatus.io) and
 | Brand | Workload labels |
 |---|---|
 | `site:mx` | `workload:molyneux-me`, `workload:geo-location`, `workload:bishops-bees` |
-| `site:xi` | `workload:xi-forums`, `workload:portal-web`, `workload:portal-repository`, `workload:xi-redirect` |
+| `site:xi` | `workload:xi-forums`, `workload:geo-location`, `workload:portal-web`, `workload:portal-repository`, `workload:portal-servers-integration`, `workload:portal-server-events`, `workload:portal-server-agent`, `workload:xi-redirect` |
 
 Workload labels map to approved public components in the status service's
 [catalogue](https://github.com/frasermolyneux/platform-status-web/blob/main/src/MX.Platform.Status.Service/catalog.json).
@@ -62,8 +62,11 @@ evidence, subscription identifiers, credentials or confidential notes.**
 
 ## Announcements and monitoring
 
-Use the authenticated `/ops` workspace on either status brand for manual banners,
-maintenance and locally authored incidents. Banners support preview,
+Use `/ops/evidence` to review monitoring results and prepare an editable incident
+draft from an evidence item. Source context remains private; review the public
+wording and explicitly choose whether to publish. Manage locally authored
+incidents and maintenance at `/ops/incidents`, and banners at `/ops/banners`.
+Banners support preview,
 publish/withdraw, scheduling and expiry, and are scoped to the current brand.
 Azure alerts and public service advisories appear as readable restricted
 evidence there; they do not automatically create public incidents.
