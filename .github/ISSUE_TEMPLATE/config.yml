@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: MX status and operations
+    url: https://mxstatus.io
+    about: Current service status, history and authenticated operations.
+  - name: XtremeIdiots status and operations
+    url: https://status.xtremeidiots.com
+    about: Current service status, history and authenticated operations.

@@ -1,0 +1,19 @@
+name: XtremeIdiots service incident
+description: Draft a customer-facing incident for status.xtremeidiots.com.
+title: "[XI] "
+labels: ["status:incident", "site:xi", "severity:degraded"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Add the affected workload label(s) before publishing.
+        A trusted maintainer must review the content and add status:published.
+        Do not include private monitoring evidence in this public repository.
+  - type: textarea
+    id: public-update
+    attributes:
+      label: Public update
+      description: Explain the customer impact and current response in plain text.
+      placeholder: We are investigating an issue affecting...
+    validations:
+      required: true
