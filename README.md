@@ -40,6 +40,9 @@ The fix is deployed and we are monitoring recovery.
 
 Supported states are `investigating`, `identified`, `monitoring`, `resolved`.
 You may also apply one `state:<state>` label for the issue's current state.
+Without a state label, the last trusted update selects the active state.
+To resolve, close the issue or add `state:resolved`; a resolved comment alone
+does not mark an open issue resolved.
 When reopening a resolved issue, remove a stale `state:resolved` label.
 Closing the issue resolves the incident; reopening makes it active again unless
 its state label still explicitly marks it resolved.
